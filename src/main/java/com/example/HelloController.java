@@ -4,6 +4,7 @@ import java.util.Map;
 
 import am.ik.spring.http.client.RetryableClientHttpRequestInterceptor;
 import com.fasterxml.jackson.databind.JsonNode;
+import io.opentelemetry.api.OpenTelemetry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,7 +20,7 @@ public class HelloController {
 
 	private final Logger log = LoggerFactory.getLogger(HelloController.class);
 
-	public HelloController(RestClient.Builder restClientBuilder) {
+	public HelloController(RestClient.Builder restClientBuilder, OpenTelemetry openTelemetry) {
 		this.restClient = restClientBuilder
 				.baseUrl("https://httpbin.org")
 				.requestInterceptor(new RetryableClientHttpRequestInterceptor(new FixedBackOff(1000, 2)))
