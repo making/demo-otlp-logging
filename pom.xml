@@ -30,6 +30,10 @@
 			<artifactId>micrometer-tracing-bridge-otel</artifactId>
 		</dependency>
 		<dependency>
+			<groupId>io.opentelemetry</groupId>
+			<artifactId>opentelemetry-exporter-otlp</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>am.ik.spring</groupId>
 			<artifactId>retryable-client-http-request-interceptor</artifactId>
 			<version>0.3.0</version>

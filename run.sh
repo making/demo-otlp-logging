@@ -10,5 +10,5 @@ DIR=$(dirname $0)
                                                          -Dotel.instrumentation.logback-appender.experimental.capture-key-value-pair-attributes=true \
                                                          -Dotel.logs.exporter=otlp \
                                                          -Dotel.metrics.exporter=none \
-                                                         -Dotel.traces.exporter=otlp \
+                                                         -Dotel.traces.exporter=none \
                                                          -Dspring.output.ansi.enabled=always"
