@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.2.5</version>
+		<version>3.3.0</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
@@ -40,12 +40,12 @@
 		<dependency>
 			<groupId>am.ik.spring</groupId>
 			<artifactId>retryable-client-http-request-interceptor</artifactId>
-			<version>0.3.0</version>
+			<version>0.4.2</version>
 		</dependency>
 		<dependency>
 			<groupId>am.ik.access-logger</groupId>
 			<artifactId>access-logger</artifactId>
-			<version>0.3.0</version>
+			<version>0.3.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -74,7 +74,7 @@
 			<dependency>
 				<groupId>io.opentelemetry.instrumentation</groupId>
 				<artifactId>opentelemetry-instrumentation-bom-alpha</artifactId>
-				<version>2.3.0-alpha</version>
+				<version>2.4.0-alpha</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
