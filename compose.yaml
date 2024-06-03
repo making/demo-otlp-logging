@@ -2,11 +2,11 @@ services:
   lognroll:
     image: ghcr.io/making/lognroll:jvm
     environment:
-      LOGNROLL_DB_PATH: /data/lognroll.db
+      LOGNROLL_DB_PATH: /tmp/lognroll.db
       LOGNROLL_AUTH_TOKEN: changeme
     ports:
     - "4318:4318"
     volumes:
-    - data:/data
+    - data:/tmp
 volumes:
   data:
